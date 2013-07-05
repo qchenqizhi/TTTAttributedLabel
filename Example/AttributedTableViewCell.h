@@ -21,13 +21,12 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-
-@class TTTAttributedLabel;
+#import "EmotionAttributedLabel.h"
 
 @interface AttributedTableViewCell : UITableViewCell
 
 @property (nonatomic, copy) NSString *summaryText;
-@property (nonatomic, strong) TTTAttributedLabel *summaryLabel;
+@property (nonatomic, strong) EmotionAttributedLabel *summaryLabel;
 
 + (CGFloat)heightForCellWithText:(NSString *)text;
 
